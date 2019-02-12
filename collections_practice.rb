@@ -81,7 +81,7 @@ def count_elements(array)
    end.uniq  # returning unique records removing dupes.
 end 
 
-# #[{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}]
+#[{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}]
 
 
 # def count_elements(array)
