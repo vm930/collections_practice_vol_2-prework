@@ -69,24 +69,24 @@ def merge_data(keys, values)
 end 
 
 
-# def count_elements(array)
-#   counter_hash = {}
-#   counter = 0
-#   comparison_hash = array[0][:name]
-#   #loop thru each element in the array [hash1, hash2, hash3]
-#   array.each do |element|
-#   #evaluate if each hash is same as previous element
-#       if element[:name] == comparison_hash  # "blake" == "blake" 
-#       #if so make a count
-#       counter +=1
-#       counter_hash[:count] = counter
-#       else # if not, create a new count 
-#       counter_hash[:name] = element[:name]
-#       counter_hash[:count] = 1
-#   end 
-# end
-#     counter_hash
-#   end 
+def count_elements(array)
+  counter_hash = {}
+  counter = 0
+  comparison_hash = array[0][:name]
+  #loop thru each element in the array [hash1, hash2, hash3]
+  array.each do |element|
+  #evaluate if each hash is same as previous element
+      if element[:name] == comparison_hash  # "blake" == "blake" 
+      #if so make a count
+      counter +=1
+      counter_hash[:count] = counter
+      else # if not, create a new count 
+      counter_hash[:name] = element[:name]
+      counter_hash[:count] = 1
+  end 
+end
+    counter_hash
+  end 
 
 # #[{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}]
 
