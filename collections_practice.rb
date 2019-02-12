@@ -65,10 +65,15 @@ end
 def organize_schools(array) 
   new_hash = {}
   array.each do |name,location_hash| 
-   
-      break
+    location = location_hash[:location]
+    if new_hash[location]
+      new_hash[location] << name
+    else 
+      new_hash[location] = []
+      new_hash[location] << name
     end 
   end 
+  new_hash
 end 
 
 # def organize_schools(schools)
