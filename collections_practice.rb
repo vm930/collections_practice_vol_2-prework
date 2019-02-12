@@ -80,7 +80,13 @@ def merge_data(keys, values)
     name = person_name[:fn]
     values.each do |person_data|
       if person_data[name]
-        merge_data
+        merged_person = person_data[name]
+        merged_person[:fn] = name
+        new_hash << merged_person
+      end
+    end
+  end 
+    new_hash
 end 
 
 # def merge_data(keys, values)
