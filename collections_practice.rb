@@ -53,6 +53,22 @@ def organize_schools(array)
 end 
 
 
+def merge_data(keys, values)
+  new_array = []
+  keys.each do |person_name|
+    name = person_name[:first_name]
+    values.each do |person_data|
+      if person_data[name]
+        merged_person = person_data[name]
+        merged_person[:first_name] = name
+        new_array << merged_person
+      end
+    end
+  end 
+    new_array
+end 
+
+
 # def count_elements(array)
 #   counter_hash = {}
 #   counter = 0
@@ -73,21 +89,6 @@ end
 #   end 
 
 # #[{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}]
-
-def merge_data(keys, values)
-  new_array = []
-  keys.each do |person_name|
-    name = person_name[:first_name]
-    values.each do |person_data|
-      if person_data[name]
-        merged_person = person_data[name]
-        merged_person[:first_name] = name
-        new_array << merged_person
-      end
-    end
-  end 
-    new_array
-end 
 
 
 # def count_elements(array)
