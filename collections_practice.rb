@@ -86,7 +86,7 @@ def merge_data(keys, values)
       end
     end
   end 
-    new_hash
+    new_array
 end 
 
 # def merge_data(keys, values)
