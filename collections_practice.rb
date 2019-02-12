@@ -64,7 +64,7 @@ end
 
 def organize_schools(array) 
   new_hash = {}
-  array.each do |element| 
+  array.each do |name,location_hash| 
    
       break
     end 
