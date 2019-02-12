@@ -78,7 +78,7 @@ def count_elements(array)
          original_hash[:count] +=1
        end 
      end
-   end.uniq
+   end.uniq  # returning unique records removing dupes.
 end 
 
 # #[{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}]
