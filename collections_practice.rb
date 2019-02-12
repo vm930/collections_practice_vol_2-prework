@@ -89,8 +89,6 @@ def merge_data(keys, values)
     new_array
 end 
 
-# def merge_data(keys, values)
-
 
 # def count_elements(array)
 #   array.each do |original_hash|
