@@ -62,6 +62,14 @@ def find_cool(array)
   end 
 end 
 
+# def find_cool(array)
+#   container = []
+#   array.each do |element|
+#     container << element if element[:temperature] == "cool" 
+#   end
+#   container
+# end
+
 def organize_schools(array) 
   array.each do 
   |element| if element == element[:location]
@@ -85,13 +93,6 @@ end
 # end
 
 
-# def find_cool(array)
-#   container = []
-#   array.each do |element|
-#     container << element if element[:temperature] == "cool" 
-#   end
-#   container
-# end
 
 # def count_elements(array)
 #   array.each do |original_hash|
