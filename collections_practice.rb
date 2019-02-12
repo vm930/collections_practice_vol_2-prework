@@ -62,13 +62,13 @@ def remove_non_strings (array)
 #   new_array
 # end 
 
-def find_cool(array)
-  container = []
-  array.each do |element|
-    container << element if element[:temperature] == "cool" 
-  end
-  container
-end
+# def find_cool(array)
+#   container = []
+#   array.each do |element|
+#     container << element if element[:temperature] == "cool" 
+#   end
+#   container
+# end
 
 def organize_schools(array) 
   array.each do 
