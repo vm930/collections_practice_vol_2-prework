@@ -63,13 +63,14 @@ def find_cool(array)
 end 
 
 def organize_schools(array) 
-  array.each do 
-  |element| if element == element[:location]
-      return element[:location]
+  new_array = []
+  array.each do |element| 
+   
       break
     end 
   end 
 end 
+
 # def organize_schools(schools)
 #   organized_schools = {}
 #   schools.each do |name, location_hash|
