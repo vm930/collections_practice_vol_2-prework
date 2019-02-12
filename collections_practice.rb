@@ -78,7 +78,7 @@ def count_elements(array)
          original_hash[:count] +=1
        end 
      end
-   end
+   end.uniq
 end 
 
 # #[{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}]
