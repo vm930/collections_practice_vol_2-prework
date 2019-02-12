@@ -74,9 +74,13 @@ end
 
 # #[{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}]
 
-def merge_data(key, values)
+def merge_data(keys, values)
   new_hash = {}
-  
+  keys.each do |person_name|
+    name = person_name[:fn]
+    values.each do |person_data|
+      if person_data[name]
+        merge_data
 end 
 
 # def merge_data(keys, values)
