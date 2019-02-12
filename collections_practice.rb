@@ -63,7 +63,7 @@ def find_cool(array)
 end 
 
 def organize_schools(array) 
-  new_array = []
+  new_hash = {}
   array.each do |element| 
    
       break
