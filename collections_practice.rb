@@ -90,20 +90,6 @@ def merge_data(keys, values)
 end 
 
 # def merge_data(keys, values)
-#   container = []
-#   keys.each do |person_name|
-#     name = person_name[:first_name]
-#     values.each do |person_data|
-#       if person_data[name]
-#         merged_person = person_data[name]
-#         merged_person[:first_name] = name
-#         container << merged_person
-#       end
-#     end
-#   end
-#   container
-# end
-
 
 
 # def count_elements(array)
