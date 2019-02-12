@@ -55,7 +55,8 @@ def remove_non_strings (array)
 # end 
 
 def find_cool(array)
-  array.map do 
+  new_array = []
+  array.each do 
     |element|if element[:temperature] == "cool"
     element[:temperature]
     end
