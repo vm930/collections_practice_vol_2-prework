@@ -55,7 +55,7 @@ def merge_data(array)
 end 
 
 def find_cool(array)
-  array.each do 
+  array.map do 
     |element|if element[:temperature] == "cool"
     element[:temperature]
     end
