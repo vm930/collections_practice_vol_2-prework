@@ -74,7 +74,7 @@ end
 
 # #[{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}]
 
-def merge_data(key, value)
+def merge_data(key, values)
   new_hash = {}
   
 end 
