@@ -77,11 +77,11 @@ end
 def merge_data(keys, values)
   new_array = []
   keys.each do |person_name|
-    name = person_name[:fn]
+    name = person_name[:first_name]
     values.each do |person_data|
       if person_data[name]
         merged_person = person_data[name]
-        merged_person[:fn] = name
+        merged_person[:first_name] = name
         new_array << merged_person
       end
     end
